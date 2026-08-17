@@ -1,37 +1,98 @@
-# Data Doctor Application — Blue Yonder
+# 🩺 Data Doctor Application — Enterprise Data Quality
 
-Production-style data/application support toolkit inspired by an enterprise Data Doctor workflow. It demonstrates how to validate datasets, diagnose data-quality issues, profile schemas and generate actionable remediation reports.
+![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
+![Data Quality](https://img.shields.io/badge/Data%20Quality-Validation-orange)
+![Testing](https://img.shields.io/badge/Testing-PyTest-green)
 
-## About the Author
+Production-style **data-quality and diagnostic toolkit** demonstrating how to validate datasets, profile schemas, detect common quality problems and generate actionable remediation reports.
 
-**Kiran Tayde** — Senior Data Scientist | Machine Learning | Data Quality | Analytics | NLP
+## 👨‍💻 Author
 
-I design practical data and ML solutions with an emphasis on reliable pipelines, reusable engineering components, model-driven insights and business impact.
+**Kiran Tayde — Senior Data Scientist | Machine Learning | Data Quality | Analytics | NLP**
 
-**GitHub:** https://github.com/kirangtayde
+GitHub: https://github.com/kirangtayde
 
-## Capabilities
-- Schema and type validation
-- Missing-value and duplicate detection
+## 🎯 Objective
+
+Reliable ML and analytics depend on reliable data. This project demonstrates a reusable framework for finding data-quality issues before they propagate into downstream analytics or models.
+
+## 🔍 Capabilities
+
+- Schema and data-type validation
+- Missing-value detection
+- Duplicate detection
 - Outlier and distribution diagnostics
 - Constraint validation
 - Data-quality scoring
-- Machine-readable JSON report
-- Modular Python service design
+- Structured JSON reporting
+- Reusable Python components
+- API-ready architecture
 
-## Architecture
-`input dataset → profiler → rules engine → quality score → diagnosis → remediation report`
+## 🧩 Architecture
 
-No Blue Yonder proprietary source code, credentials, customer data or confidential assets are included. This is a clean portfolio implementation of the engineering concepts.
+```text
+Input Dataset
+     ↓
+Profiler
+     ↓
+Validation Rules
+     ↓
+Quality Score
+     ↓
+Diagnosis
+     ↓
+Remediation Report
+```
 
-## Stack
-Python, Pandas, Pydantic-style validation concepts, pytest, FastAPI-ready architecture.
+## 📊 Example Quality Checks
 
-## Resume summary
-Supported enterprise application reliability through structured issue investigation, data-quality diagnostics, debugging and reusable validation components.
+| Check | Purpose |
+|---|---|
+| Schema | Detect unexpected columns/types |
+| Missingness | Identify incomplete fields |
+| Duplicates | Detect repeated records |
+| Range | Validate business boundaries |
+| Distribution | Identify unusual patterns |
+| Constraints | Enforce data rules |
 
-## Connect
+## 🔐 Responsible Use
 
-**Kiran Tayde** · Senior Data Scientist · Machine Learning · Data Analytics
+This repository contains a clean portfolio implementation. It does **not** contain Blue Yonder proprietary source code, credentials, customer information or confidential assets.
 
-[GitHub](https://github.com/kirangtayde)
+## 🛠️ Stack
+
+Python • Pandas • Validation concepts • PyTest • FastAPI-ready design
+
+## 📁 Project Structure
+
+```text
+src/
+├── profiler.py
+├── validators.py
+├── quality_score.py
+└── reporting.py
+
+tests/
+requirements.txt
+README.md
+```
+
+## 🚀 Quick Start
+
+```bash
+git clone https://github.com/kirangtayde/data-doctor-application.git
+cd data-doctor-application
+python -m venv .venv
+pip install -r requirements.txt
+pytest -q
+```
+
+## 📌 Resume Summary
+
+**Data Doctor Application | Python, Pandas, Data Quality** — Designed a reusable data-quality diagnostic workflow for schema validation, missing-value analysis, duplicate detection, constraints, quality scoring and remediation reporting.
+
+## 🔗 Connect
+
+**Kiran Tayde** · Senior Data Scientist · Data Quality · Machine Learning · Analytics
+
+https://github.com/kirangtayde
